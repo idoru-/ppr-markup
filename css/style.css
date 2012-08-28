@@ -144,19 +144,19 @@ button::-moz-focus-inner {
 }
 
 ::-moz-selection {
-  background: #830470;
+  background: #007275;
   color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background: #830470;
+  background: #007275;
   color: white;
   text-shadow: none;
 }
 
 a:link {
-  -webkit-tap-highlight-color: #830470;
+  -webkit-tap-highlight-color: #007275;
 }
 
 .ie7 img {
@@ -366,19 +366,19 @@ button::-moz-focus-inner {
 }
 
 ::-moz-selection {
-  background: #830470;
+  background: #007275;
   color: white;
   text-shadow: none;
 }
 
 ::selection {
-  background: #830470;
+  background: #007275;
   color: white;
   text-shadow: none;
 }
 
 a:link {
-  -webkit-tap-highlight-color: #830470;
+  -webkit-tap-highlight-color: #007275;
 }
 
 .ie7 img {
@@ -467,7 +467,7 @@ h3.orders-h {
 }
 
 a, a:active, a:visited {
-  color: #830470;
+  color: #105759;
 }
 
 a:hover {
@@ -479,7 +479,7 @@ strong, th {
 }
 
 small {
-  font-size: 59%;
+  font-size: 67%;
 }
 
 input:invalid, textarea:invalid {
@@ -664,9 +664,7 @@ body {
 }
 
 .orders-table table {
-  border-color: black;
-  padding: 10px;
-  width: 0em;
+  width: 815px;
 }
 .orders-table table td, .orders-table table th {
   padding: 9px;
@@ -733,17 +731,13 @@ header #main-nav li.last:after {
 }
 
 footer {
-  width: 500px;
-  height: 100px;
-  background: url("../images/footer.png") no-repeat;
-  margin-left: 228px;
-  padding-top: 10px;
+  background: url(../images/footer-bg.jpg) top center repeat-x;
+  height: 60px;
+  padding-top: 5px;
 }
-footer .mail-and-copy {
-  margin: 30px 100px auto 40px;
-}
-footer p {
-  font-size: 20px;
+
+.copyright {
+  margin-top: -8px;
 }
 
 /*/mediaquery */
