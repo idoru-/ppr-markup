@@ -7,52 +7,52 @@
 //-----------------------------------------------
 
 body, select, input, textarea
-  color: $font-color
-  // Set your base font here, to apply evenly
-  // font-family: 'Alegreya', serif;
+	color: $font-color
+	// Set your base font here, to apply evenly
+	// font-family: 'Alegreya', serif;
 
 //Headers (h1, h2, etc) have no default font-size or margin; define those yourself
 //h1, h2, h3, h4, h5, h6
-  // Bold might not be the best choice if you are
-  // embedding a @font-face that's already bold
+	// Bold might not be the best choice if you are
+	// embedding a @font-face that's already bold
 
 h2, h3
-  padding-top: 5px
-  padding-bottom: 10px
+	padding-top: 5px
+	padding-bottom: 10px
 
 h2  
-  +text-shadow(rgba(0, 0, 0, 0.85) 0 1px 1px)
-  font-weight: normal
-  font-size: 32pt
-  color: $strawberry
-  margin-top: 25px
-   
+	+text-shadow(rgba(0, 0, 0, 0.85) 0 1px 1px)
+	font-weight: normal
+	font-size: 32pt
+	color: $strawberry
+	margin-top: 25px
+	 
 h3
-  font-size: 22pt
-  font-weight: normal
-  color: $font-color
-  // color: #3b2518
-  // color: #fff
-  +text-shadow(rgba(0, 0, 0, 0.5) 0 1px 1px)
-  
-  &.orders-h
-    padding-top: 30px
-    padding-bottom: 5px
+	font-size: 22pt
+	font-weight: normal
+	color: $font-color
+	// color: #3b2518
+	// color: #fff
+	+text-shadow(rgba(0, 0, 0, 0.5) 0 1px 1px)
+	
+	&.orders-h
+		padding-top: 30px
+		padding-bottom: 5px
 
 
 
 a, a:active, a:visited
-  color: $link-color
+	color: $link-color
 
 a:hover
-  color: $link-hover-color
+	color: $link-hover-color
 
 
 strong, th
-  font-weight: bold
+	font-weight: bold
 
 small
-  +font-size(16px)
+	+font-size(16px)
 
 
 // Add the 'required' attribute on your
@@ -60,44 +60,44 @@ small
 input:valid, textarea:valid
 
 input:invalid, textarea:invalid
-  +border-radius(1px)
-  +single-box-shadow(red, 0, 0, 5px, 0)
+	+border-radius(1px)
+	+single-box-shadow(red, 0, 0, 5px, 0)
 
 .no-boxshadow input:invalid,
 .no-boxshadow textarea:invalid
-  background-color: #f0dddd
+	background-color: #f0dddd
 
 //-----------------------------------
 // Add your own custom styles below
 //-----------------------------------
 
 body
-  background: $body-bg-color  
-  background: url(../images/bg.jpg)
-  text-align: center 
-    
+	background: $body-bg-color  
+	background: url(../images/bg.jpg)
+	text-align: center 
+		
 .sh
-  +text-shadow(0px 2px 3px rgba(116, 111, 83, 1), -1px -1px white)
-  font-size: 36px
-  color: $strawberry
-  font-weight: bold
+	+text-shadow(0px 2px 3px rgba(116, 111, 83, 1), -1px -1px white)
+	font-size: 36px
+	color: $strawberry
+	font-weight: bold
 
 
 .separator
-  background: url(../images/veng2.png) no-repeat
-  width: 306px
-  height: 62px
-  margin: 30px auto 20px 330px
-  clear: both
+	background: url(../images/veng2.png) no-repeat
+	width: 306px
+	height: 62px
+	margin: 30px auto 20px 330px
+	clear: both
 
 .buuutton
-  text-decoration: underline
+	text-decoration: underline
 
-  p
-    font-size: 250%
-    font-color: red
-  
-  
+	p
+		font-size: 250%
+		font-color: red
+	
+	
 //.btn-custom
 //  background-color: hsl(309, 98%, 21%) !important
 //  background-repeat: repeat-x 
@@ -111,168 +111,180 @@ body
 
 
 .main
-  font-family: 'Alegreya', serif
-  //margin: 20px auto
-  
+	font-family: 'Alegreya', serif
+	//margin: 20px auto
+	
 .logo
-  margin: 15px auto 0 auto
+	margin: 15px auto 0 auto
 
 // .vengette
 //   margin-bottom: 55px
 
 .vengette2
-  margin: 0
-  
+	margin: 0
+	
 #main
-  ul, ol
-    text-align: left
-    +push(5) 
-  
+	ul, ol
+		text-align: left
+		+push(5) 
+	
 .example
-  width: 34em
-  padding: 1em
-  background: #fff
-  //border-style: solid 
-  //border-color: #fdfde9
-  //border-width: 20px
-  //box-shadow: 5px 5px 20px rgba(0,0,0, 0.5)
-  //margin: auto 160px
+	width: 34em
+	padding: 1em
+	background: #fff
+	//border-style: solid 
+	//border-color: #fdfde9
+	//border-width: 20px
+	//box-shadow: 5px 5px 20px rgba(0,0,0, 0.5)
+	//margin: auto 160px
 
 .box
-  position: relative
-  width: 30%
-  padding: 1em
-  margin: 2em 10px 4em
-  background: #fff
-  +border-radius(4px)
-  +box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset)
-  
-  &:before, &:after 
-    position: absolute
-    z-index: -2
-    bottom: 15px
-    left: 10px
-    width: 50%
-    height: 20%
-    max-width: 300px
-    content: ''
-    +box-shadow(0 15px 10px rgba(0, 0, 0, 0.7))
-    +transform( rotate(-3deg) )
+	position: relative
+	width: 30%
+	padding: 1em
+	margin: 2em 10px 4em
+	background: #fff
+	+border-radius(4px)
+	+box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset)
+	
+	&:before, &:after 
+		position: absolute
+		z-index: -2
+		bottom: 15px
+		left: 10px
+		width: 50%
+		height: 20%
+		max-width: 300px
+		content: ''
+		+box-shadow(0 15px 10px rgba(0, 0, 0, 0.7))
+		+transform( rotate(-3deg) )
 
-  &:after
-    right: 10px
-    left: auto
-    +transform( rotate(3deg) )
+	&:after
+		right: 10px
+		left: auto
+		+transform( rotate(3deg) )
 
 .frame
-  position: relative
-  width: 34em
-  padding: 1em
-  margin: 1em 32px 4em
-  background: #fff
-  +box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset)
-  +box-shadow(0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset)
+	position: relative
+	width: 34em
+	padding: 1em
+	margin: 1em 32px 4em
+	background: #fff
+	+box-shadow(0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset)
+	+box-shadow(0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset)
 
-  &:before, &:after 
-    content: ""
-    position: absolute
-    z-index: 1
-    
+	&:before, &:after 
+		content: ""
+		position: absolute
+		z-index: 1
+		
 
 .container
-  +container
-  //background: url(../images/grid.png)
-  background: none
+	+container
+	//background: url(../images/grid.png)
+	background: none
 
 
 .auto
-  // margin: auto
-  width: 50%
+	// margin: auto
+	width: 50%
 
 .upload-container
-  background: rgba(131, 4, 112, 0.5)
-  +box-shadow(0 0 1px 1px rgba(255, 255, 255, 0.9))
-  //+box-shadow()
-  margin: 20px
-  padding: 30px
+	background: rgba(131, 4, 112, 0.5)
+	+box-shadow(0 0 1px 1px rgba(255, 255, 255, 0.9))
+	//+box-shadow()
+	margin: 20px
+	padding: 30px
 
 // twitter bootstrap button
 
 .btn-custom
-  background-color: hsl(309, 98%, 21%) !important
-  background-repeat: repeat-x
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe9fef", endColorstr="#6a015a")
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#fe9fef), to(#6a015a))
-  background-image: -moz-linear-gradient(top, #fe9fef, #6a015a)
-  background-image: -ms-linear-gradient(top, #fe9fef, #6a015a)
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe9fef), color-stop(100%, #6a015a))
-  background-image: -webkit-linear-gradient(top, #fe9fef, #6a015a)
-  background-image: -o-linear-gradient(top, #fe9fef, #6a015a)
-  background-image: linear-gradient(#fe9fef, #6a015a)
-  border-color: #6a015a #6a015a hsl(309, 98%, 6%)
-  border-width: 1px
-  border-radius: 4px
-  color: #333 !important
-  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.99)
-  -webkit-font-smoothing: antialiased
+	background-color: hsl(309, 98%, 21%) !important
+	background-repeat: repeat-x
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe9fef", endColorstr="#6a015a")
+	background-image: -khtml-gradient(linear, left top, left bottom, from(#fe9fef), to(#6a015a))
+	background-image: -moz-linear-gradient(top, #fe9fef, #6a015a)
+	background-image: -ms-linear-gradient(top, #fe9fef, #6a015a)
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe9fef), color-stop(100%, #6a015a))
+	background-image: -webkit-linear-gradient(top, #fe9fef, #6a015a)
+	background-image: -o-linear-gradient(top, #fe9fef, #6a015a)
+	background-image: linear-gradient(#fe9fef, #6a015a)
+	border-color: #6a015a #6a015a hsl(309, 98%, 6%)
+	border-width: 1px
+	border-radius: 4px
+	color: #333 !important
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.99)
+	-webkit-font-smoothing: antialiased
 
 .orders-table
-  table
-    width: 815px
-    td, th
-      padding: 9px
-      border: 1px dashed #ccc
+	table
+		width: 815px
+		td, th
+			padding: 9px
+			border: 1px dashed #ccc
 
 
 
 .img-table-prewiew  
-  width: 420px
+	width: 420px
 
 .photo-prev
-  width: 400px
-  height: 290px
-  
+	width: 400px
+	height: 290px
+	
 body .header1  
-  background: url(../images/header-bg.jpg) top center repeat-x
+	background: url(../images/header-bg.jpg) top center repeat-x
 
 
 header
-  text-align: center
-  height: 229px
+	text-align: center
+	height: 229px
 
-  #main-nav
-    //margin-top: 60px
-    ul li
-      list-style: none
-      display: inline
-    img
-      margin-right: 5px
-    li
-      a
-        +inline-block
-        height: 20px
-        &.home
-          background: url("../images/home.png")
-          width: 63px
-        &.examples
-          background: url("../images/examples.png")
-          width: 97px
-      &:after
-        margin: 0 10px
-        content: url("../images/menu-separator.png")
-        +inline-block
-      &.last:after
-        content: ''
+	#main-nav
+		//margin-top: 60px
+		ul li
+			list-style: none
+			display: inline
+		img
+			margin-right: 4px
+		li
+			a
+				+inline-block
+				height: 20px
+				&.home
+					background: url("../images/home.png")
+					width: 78px
+				&.examples
+					background: url("../images/examples.png")
+					width: 121px
+				&.how-it-works
+					background: url("../images/how-it-works.png")
+					width: 194px
+				&.payment
+					background: url("../images/payment.png")
+					width: 117px
+				&.upload
+					background: url("../images/upload.png")
+					width: 99px
+				&.login
+					background: url("../images/login.png")
+					width: 82px
+			&:after
+				margin: 0 10px
+				content: url("../images/menu-separator.png")
+				+inline-block
+			&.last:after
+				content: ''
 
 
 footer
-  background: url(../images/footer-bg.jpg) top center repeat-x
-  height: 60px
+	background: url(../images/footer-bg.jpg) top center repeat-x
+	height: 60px
 
-  .mail-and-copy
-    padding-top: 5px
+	.mail-and-copy
+		padding-top: 5px
 
 .copyright
-  margin-top: -8px
+	margin-top: -8px
 
 

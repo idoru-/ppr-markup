@@ -693,7 +693,7 @@ header #main-nav ul li {
   display: inline;
 }
 header #main-nav img {
-  margin-right: 5px;
+  margin-right: 4px;
 }
 header #main-nav li a {
   display: -moz-inline-box;
@@ -708,11 +708,27 @@ header #main-nav li a {
 }
 header #main-nav li a.home {
   background: url("../images/home.png");
-  width: 63px;
+  width: 78px;
 }
 header #main-nav li a.examples {
   background: url("../images/examples.png");
-  width: 97px;
+  width: 121px;
+}
+header #main-nav li a.how-it-works {
+  background: url("../images/how-it-works.png");
+  width: 194px;
+}
+header #main-nav li a.payment {
+  background: url("../images/payment.png");
+  width: 117px;
+}
+header #main-nav li a.upload {
+  background: url("../images/upload.png");
+  width: 99px;
+}
+header #main-nav li a.login {
+  background: url("../images/login.png");
+  width: 82px;
 }
 header #main-nav li:after {
   margin: 0 10px;
