@@ -733,6 +733,8 @@ header #main-nav li.last:after {
 footer {
   background: url(../images/footer-bg.jpg) top center repeat-x;
   height: 60px;
+}
+footer .mail-and-copy {
   padding-top: 5px;
 }
 
