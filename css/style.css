@@ -631,7 +631,7 @@ body {
 }
 
 .auto {
-  width: 50%;
+  width: 100%;
 }
 
 .upload-container {
@@ -669,6 +669,14 @@ body {
 .orders-table table td, .orders-table table th {
   padding: 9px;
   border: 1px dashed #cccccc;
+}
+
+.purchase-options {
+  text-align: center;
+}
+
+.send-margin {
+  margin: 0 25px 0;
 }
 
 .img-table-prewiew {
